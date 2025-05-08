@@ -1,3 +1,33 @@
+:root {
+  --primary-color: #5b5df0; /* Blue */
+  --secondary-color: #111;  /* Dark Text */
+  --light-color: #fafafa;   /* Light background */
+  --neutral-color: #ccc;    /* Light Gray */
+}
+
+body {
+  background-color: #fff;
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+}
+
+.btn-submit:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+
 /* === Reset & Base === */
 * {
   margin: 0;
