@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merely.Digital - Cleaned Version</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merely Digital</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+  <!-- Header -->
+  <header class="container">
+    <img src="assets/images/logo.png" alt="Logo" class="logo" />
     <nav>
-      <!-- Navigation items -->
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  <main>
-    <section>
-      <h1>Welcome to Merely.Digital</h1>
-      <p>This is a cleaned-up version ready for Webflow or WordPress.</p>
-    </section>
-  </main>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Strategy, Design & Development</h1>
+      <p>We craft digital experiences that drive business outcomes. Let’s turn your ideas into reality.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="container grid">
+      <div class="card">
+        <h3>Brand Strategy</h3>
+        <p>Define your identity and positioning in a crowded digital landscape.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Beautiful, functional interfaces tailored to your users and goals.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Lightning-fast, scalable websites built with modern frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We're a team of creatives and technologists focused on crafting elegant and effective web solutions. From concept to code, we partner with clients to bring their vision to life.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Get in Touch</h2>
+    <p>Have a project in mind? Reach out to us and let’s talk.</p>
+    <!-- Optional: Add a contact form or email link -->
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Merely.Digital</p>
+    <p>&copy; 2025 Merely Digital. All rights reserved.</p>
   </footer>
-  <script src="assets/js/main.js" defer></script>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
 </body>
 </html>
+
