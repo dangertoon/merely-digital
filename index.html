@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Merely Digital</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your description here">
+  <title>My Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="container">
-    <img src="assets/74c3cef8f9822aa6b4168a36bd0158d2.png" alt="Logo" class="logo" />
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="home" class="section hero">
     <div class="container">
-      <h1>Strategy, Design & Development</h1>
-      <p>We craft digital experiences that drive business outcomes. Let’s turn your ideas into reality.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="container grid">
-      <div class="card">
-        <h3>Brand Strategy</h3>
-        <p>Define your identity and positioning in a crowded digital landscape.</p>
-      </div>
-      <div class="card">
-        <h3>UI/UX Design</h3>
-        <p>Beautiful, functional interfaces tailored to your users and goals.</p>
-      </div>
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>Lightning-fast, scalable websites built with modern frameworks.</p>
-      </div>
+      <h1>Welcome to My Website</h1>
+      <p>Creating the future, one design at a time.</p>
+      <a href="#contact" class="btn-submit">Get in Touch</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>We're a team of creatives and technologists focused on crafting elegant and effective web solutions. From concept to code, we partner with clients to bring their vision to life.</p>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We specialize in creating impactful, user-focused web designs.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Our Work</h3>
+          <p>We build websites with purpose.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>Shaping the digital world.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
- <section id="contact" class="section">
-  <div class="container">
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Have a project in mind? Reach out to us and let’s talk.</p>
 
-    <h2>Get in Touch</h2>
-    <p>Have a project in mind? Reach out to us and let’s talk.</p>
-
-    <!-- Contact Form -->
-    <form class="contact-form" action="https://formspree.io/f/yourFormId" method="POST">
-      <div class="form-grid">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name" />
+      <!-- Contact Form -->
+      <form class="contact-form" action="https://formspree.io/f/yourFormId" method="POST">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required placeholder="you@example.com" />
+          </div>
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required placeholder="you@example.com" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your message…"></textarea>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Your message…"></textarea>
-      </div>
-      <button type="submit" class="btn-submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
-
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Merely Digital. All rights reserved.</p>
+    <p>© 2025 My Website | All Rights Reserved</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="main.js" defer></script>
 </body>
 </html>
-
